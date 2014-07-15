@@ -56,19 +56,26 @@ div {
 	transition: background-color 1s ease;
 }
 
+/* css vertical centering from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
 .wrapper {
 	width: 90%;
 	height: 100%;
-	display: table;
 	margin: 0 auto;
 	-webkit-user-select: none;
+	-moz-user-select: none;
 	user-select: none;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 
 .timer {
-	display: table-cell;
+	position: relative;
 	text-align: center;
-	vertical-align: middle;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .timer span[class*="iconicstroke-"]:before {
