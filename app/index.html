@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SmplTmr</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/smpl-tmr.css">
+  </head>
+  <body>
+    <script>
+      window.SmplTmrENV = {{ENV}};
+      window.EmberENV = window.SmplTmrENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/smpl-tmr.js"></script>
+    <script>
+      window.SmplTmr = require('smpl-tmr/app')['default'].create(SmplTmrENV.APP);
+    </script>
+  </body>
+</html>

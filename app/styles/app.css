@@ -1,0 +1,148 @@
+@import url(http://weloveiconfonts.com/api/?family=iconicstroke);
+
+/* iconicstroke */
+[class*="iconicstroke-"]:before {
+  font-family: 'IconicStroke', sans-serif;
+  font-size: 40px;
+}
+
+
+.iconicstroke-fullscreen-exit {
+	display: none;
+}
+
+:-webkit-full-screen .iconicstroke-fullscreen-exit{
+	display: inline;
+}
+ 
+:-moz-full-screen .iconicstroke-fullscreen-exit{
+	display: inline;
+}
+ 
+:-ms-fullscreen .iconicstroke-fullscreen-exit{
+	display: inline;
+}
+ 
+:fullscreen .iconicstroke-fullscreen-exit{
+	display: inline;
+}
+
+:-webkit-full-screen .iconicstroke-fullscreen{
+	display: none;
+}
+ 
+:-moz-full-screen .iconicstroke-fullscreen{
+	display: none;
+}
+ 
+:-ms-fullscreen .iconicstroke-fullscreen{
+	display: none;
+}
+ 
+:fullscreen .iconicstroke-fullscreen{
+	display: none;
+}
+
+html, body, h1 {
+  margin: 0;
+  font-family: Monaco, Helvetica, Arial;
+}
+
+html, body, body > div, .full {
+	height: 100%;
+}
+
+div {
+	transition: background-color 1s ease;
+}
+
+.wrapper {
+	width: 90%;
+	height: 100%;
+	display: table;
+	margin: 0 auto;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.timer {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.timer span[class*="iconicstroke-"]:before {
+	font-size: 60px;
+}
+
+.timer span[class*="iconicstroke-"] {
+	display: inline;
+}
+
+[data-ember-action]{
+	cursor: pointer;
+}
+
+.settings .iconicstroke-wrench {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 100;
+}
+
+.settings .iconicstroke-fullscreen, .settings .iconicstroke-fullscreen-exit {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 100;
+}
+
+.settings div{
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: right;
+}
+
+.settings h1 {
+	text-align: right;
+}
+
+.settings div {
+	padding: 0 10px 10px;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.ok {
+	background-color: #7F6;
+}
+
+.warn {
+	background-color: #FF0;
+}
+
+.error {
+	transition: none;
+	-moz-animation:error 1.5s infinite;
+	-webkit-animation:error 1.5s infinite;
+}
+
+@-webkit-keyframes error {
+	0%		{ background: #F00; }
+	50%		{ background: #00F; }
+	100%	{ background: #F00; }
+}
+
+@-moz-keyframes error {
+	0%		{ background: #F00; }
+	50%		{ background: #00F; }
+	100%	{ background: #F00; }
+}
