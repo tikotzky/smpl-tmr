@@ -6,6 +6,8 @@ SmplTmr is a Simple Timer application.
 
 It starts counting down with a green background. When it reaches the warn time the background turns yellow, and when it reaches the error time the background starts alternating between red/blue.
 
+Click [here](http://www.smpltmr.com/?start=.1&warn=.05) for a demo that counts down for 6 seconds, warns at 3 seconds and errors at 0 seconds.
+
 ### What is this for?
 
 It was built for two purposes  
