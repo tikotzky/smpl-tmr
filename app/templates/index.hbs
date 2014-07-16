@@ -1,4 +1,16 @@
 <div {{bind-attr class=":full status"}}>
+	<div class="wrapper">
+		<div class="timer">
+			{{#big-text}}
+				<div>{{format-time displayCountdown}}</div>
+			{{/big-text}}
+			{{#if isReady}}<span class="iconicstroke-play" {{action 'start'}}></span>{{/if}}
+			{{#if isRunning}}<span class="iconicstroke-pause" {{action 'pause'}}></span>{{/if}}
+			{{#if isPaused}}<span  class="iconicstroke-play" {{action 'resume'}}></span>{{/if}}
+			&nbsp;
+			<span class="iconicstroke-stop" {{action 'reset'}}></span>
+		</div>
+	</div>
 	<div class="settings">
 		<span class="iconicstroke-wrench" {{action 'toggleEdit'}}></span>
 		<span class="iconicstroke-fullscreen" {{action 'toggleFullscreen'}}></span>
@@ -11,17 +23,5 @@
 				error at {{input value=error size="2"}} minutes<br>
 			</div>
 		{{/if}}
-	</div>
-	<div class="wrapper">
-		<div class="timer">
-			{{#big-text}}
-				<div>{{format-time displayCountdown}}</div>
-			{{/big-text}}
-			{{#if isReady}}<span class="iconicstroke-play" {{action 'start'}}></span>{{/if}}
-			{{#if isRunning}}<span class="iconicstroke-pause" {{action 'pause'}}></span>{{/if}}
-			{{#if isPaused}}<span  class="iconicstroke-play" {{action 'resume'}}></span>{{/if}}
-			&nbsp;
-			<span class="iconicstroke-stop" {{action 'reset'}}></span>
-		</div>
 	</div>
 </div>
